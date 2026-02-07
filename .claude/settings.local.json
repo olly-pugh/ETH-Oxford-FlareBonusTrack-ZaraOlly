@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(npm install:*)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH\")",
+      "Bash(npx hardhat compile)",
+      "Bash(node:*)",
+      "Bash(npx hardhat node)",
+      "Bash(curl:*)",
+      "Bash(npx hardhat run:*)",
+      "Bash(npx react-scripts build)",
+      "WebSearch"
+    ]
+  }
+}

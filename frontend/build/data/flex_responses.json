@@ -1,0 +1,4571 @@
+{
+  "summary": {
+    "n_households": 25,
+    "total_slots": 337,
+    "high_carbon_slots": 22,
+    "total_shifted_kwh": 97.63,
+    "avg_participants_per_event": 17.7,
+    "peak_demand_reduction_pct": 1.6,
+    "total_carbon_avoided_gCO2": 13059.0,
+    "total_tokens_issued": 130.6,
+    "peak_baseline_kw": 59.1,
+    "peak_shifted_kw": 58.2
+  },
+  "households": [
+    {
+      "id": "HH-001",
+      "peak_demand_kw": 1.92,
+      "max_shift_fraction": 0.29,
+      "max_shift_hours": 3.7,
+      "p_respond": 0.81,
+      "flex_assets": "EV + dishwasher + battery",
+      "total_shifted_kwh": 6.22,
+      "carbon_avoided_gCO2": 827.0,
+      "tokens_earned": 8.3
+    },
+    {
+      "id": "HH-002",
+      "peak_demand_kw": 1.28,
+      "max_shift_fraction": 0.35,
+      "max_shift_hours": 3.6,
+      "p_respond": 0.56,
+      "flex_assets": "EV + heat pump",
+      "total_shifted_kwh": 4.17,
+      "carbon_avoided_gCO2": 555.0,
+      "tokens_earned": 5.5
+    },
+    {
+      "id": "HH-003",
+      "peak_demand_kw": 1.46,
+      "max_shift_fraction": 0.27,
+      "max_shift_hours": 3.9,
+      "p_respond": 0.79,
+      "flex_assets": "Heat pump + laundry",
+      "total_shifted_kwh": 3.12,
+      "carbon_avoided_gCO2": 384.0,
+      "tokens_earned": 3.8
+    },
+    {
+      "id": "HH-004",
+      "peak_demand_kw": 1.99,
+      "max_shift_fraction": 0.25,
+      "max_shift_hours": 3.1,
+      "p_respond": 0.53,
+      "flex_assets": "Heat pump + dishwasher",
+      "total_shifted_kwh": 6.5,
+      "carbon_avoided_gCO2": 862.0,
+      "tokens_earned": 8.6
+    },
+    {
+      "id": "HH-005",
+      "peak_demand_kw": 2.15,
+      "max_shift_fraction": 0.33,
+      "max_shift_hours": 3.5,
+      "p_respond": 0.66,
+      "flex_assets": "EV + heat pump",
+      "total_shifted_kwh": 2.56,
+      "carbon_avoided_gCO2": 385.0,
+      "tokens_earned": 3.9
+    },
+    {
+      "id": "HH-006",
+      "peak_demand_kw": 1.74,
+      "max_shift_fraction": 0.36,
+      "max_shift_hours": 2.4,
+      "p_respond": 0.71,
+      "flex_assets": "Heat pump + dishwasher",
+      "total_shifted_kwh": 5.69,
+      "carbon_avoided_gCO2": 756.0,
+      "tokens_earned": 7.6
+    },
+    {
+      "id": "HH-007",
+      "peak_demand_kw": 1.95,
+      "max_shift_fraction": 0.23,
+      "max_shift_hours": 3.4,
+      "p_respond": 0.84,
+      "flex_assets": "EV + dishwasher + battery",
+      "total_shifted_kwh": 6.37,
+      "carbon_avoided_gCO2": 846.0,
+      "tokens_earned": 8.5
+    },
+    {
+      "id": "HH-008",
+      "peak_demand_kw": 1.6,
+      "max_shift_fraction": 0.27,
+      "max_shift_hours": 2.9,
+      "p_respond": 0.59,
+      "flex_assets": "Heat pump + dishwasher",
+      "total_shifted_kwh": 5.21,
+      "carbon_avoided_gCO2": 691.0,
+      "tokens_earned": 6.9
+    },
+    {
+      "id": "HH-009",
+      "peak_demand_kw": 1.75,
+      "max_shift_fraction": 0.3,
+      "max_shift_hours": 2.5,
+      "p_respond": 0.8,
+      "flex_assets": "Heat pump + dishwasher",
+      "total_shifted_kwh": 5.68,
+      "carbon_avoided_gCO2": 755.0,
+      "tokens_earned": 7.5
+    },
+    {
+      "id": "HH-010",
+      "peak_demand_kw": 2.02,
+      "max_shift_fraction": 0.37,
+      "max_shift_hours": 3.6,
+      "p_respond": 0.67,
+      "flex_assets": "Heat pump + laundry",
+      "total_shifted_kwh": 0.0,
+      "carbon_avoided_gCO2": 0.0,
+      "tokens_earned": 0.0
+    },
+    {
+      "id": "HH-011",
+      "peak_demand_kw": 1.89,
+      "max_shift_fraction": 0.34,
+      "max_shift_hours": 2.3,
+      "p_respond": 0.59,
+      "flex_assets": "Heat pump + dishwasher",
+      "total_shifted_kwh": 6.1,
+      "carbon_avoided_gCO2": 811.0,
+      "tokens_earned": 8.1
+    },
+    {
+      "id": "HH-012",
+      "peak_demand_kw": 1.92,
+      "max_shift_fraction": 0.33,
+      "max_shift_hours": 3.4,
+      "p_respond": 0.85,
+      "flex_assets": "EV + heat pump",
+      "total_shifted_kwh": 6.12,
+      "carbon_avoided_gCO2": 814.0,
+      "tokens_earned": 8.1
+    },
+    {
+      "id": "HH-013",
+      "peak_demand_kw": 1.61,
+      "max_shift_fraction": 0.31,
+      "max_shift_hours": 2.3,
+      "p_respond": 0.55,
+      "flex_assets": "Heat pump + laundry",
+      "total_shifted_kwh": 1.93,
+      "carbon_avoided_gCO2": 290.0,
+      "tokens_earned": 2.9
+    },
+    {
+      "id": "HH-014",
+      "peak_demand_kw": 2.19,
+      "max_shift_fraction": 0.31,
+      "max_shift_hours": 3.5,
+      "p_respond": 0.79,
+      "flex_assets": "EV + battery",
+      "total_shifted_kwh": 0.0,
+      "carbon_avoided_gCO2": 0.0,
+      "tokens_earned": 0.0
+    },
+    {
+      "id": "HH-015",
+      "peak_demand_kw": 2.03,
+      "max_shift_fraction": 0.31,
+      "max_shift_hours": 2.6,
+      "p_respond": 0.51,
+      "flex_assets": "EV + dishwasher + battery",
+      "total_shifted_kwh": 0.0,
+      "carbon_avoided_gCO2": 0.0,
+      "tokens_earned": 0.0
+    },
+    {
+      "id": "HH-016",
+      "peak_demand_kw": 2.14,
+      "max_shift_fraction": 0.28,
+      "max_shift_hours": 3.7,
+      "p_respond": 0.61,
+      "flex_assets": "Heat pump + laundry",
+      "total_shifted_kwh": 0.0,
+      "carbon_avoided_gCO2": 0.0,
+      "tokens_earned": 0.0
+    },
+    {
+      "id": "HH-017",
+      "peak_demand_kw": 1.43,
+      "max_shift_fraction": 0.26,
+      "max_shift_hours": 2.6,
+      "p_respond": 0.8,
+      "flex_assets": "EV + heat pump",
+      "total_shifted_kwh": 4.7,
+      "carbon_avoided_gCO2": 625.0,
+      "tokens_earned": 6.2
+    },
+    {
+      "id": "HH-018",
+      "peak_demand_kw": 1.86,
+      "max_shift_fraction": 0.33,
+      "max_shift_hours": 2.8,
+      "p_respond": 0.87,
+      "flex_assets": "Heat pump + laundry",
+      "total_shifted_kwh": 5.95,
+      "carbon_avoided_gCO2": 793.0,
+      "tokens_earned": 7.9
+    },
+    {
+      "id": "HH-019",
+      "peak_demand_kw": 1.54,
+      "max_shift_fraction": 0.2,
+      "max_shift_hours": 2.2,
+      "p_respond": 0.83,
+      "flex_assets": "EV + battery",
+      "total_shifted_kwh": 5.05,
+      "carbon_avoided_gCO2": 672.0,
+      "tokens_earned": 6.7
+    },
+    {
+      "id": "HH-020",
+      "peak_demand_kw": 1.61,
+      "max_shift_fraction": 0.3,
+      "max_shift_hours": 2.3,
+      "p_respond": 0.81,
+      "flex_assets": "Heat pump + laundry",
+      "total_shifted_kwh": 1.93,
+      "carbon_avoided_gCO2": 291.0,
+      "tokens_earned": 2.9
+    },
+    {
+      "id": "HH-021",
+      "peak_demand_kw": 2.07,
+      "max_shift_fraction": 0.28,
+      "max_shift_hours": 2.6,
+      "p_respond": 0.78,
+      "flex_assets": "EV + battery",
+      "total_shifted_kwh": 6.89,
+      "carbon_avoided_gCO2": 915.0,
+      "tokens_earned": 9.2
+    },
+    {
+      "id": "HH-022",
+      "peak_demand_kw": 1.22,
+      "max_shift_fraction": 0.22,
+      "max_shift_hours": 3.9,
+      "p_respond": 0.91,
+      "flex_assets": "EV + dishwasher + battery",
+      "total_shifted_kwh": 3.98,
+      "carbon_avoided_gCO2": 528.0,
+      "tokens_earned": 5.3
+    },
+    {
+      "id": "HH-023",
+      "peak_demand_kw": 1.44,
+      "max_shift_fraction": 0.25,
+      "max_shift_hours": 3.9,
+      "p_respond": 0.85,
+      "flex_assets": "EV + dishwasher + battery",
+      "total_shifted_kwh": 4.66,
+      "carbon_avoided_gCO2": 618.0,
+      "tokens_earned": 6.2
+    },
+    {
+      "id": "HH-024",
+      "peak_demand_kw": 1.43,
+      "max_shift_fraction": 0.25,
+      "max_shift_hours": 2.2,
+      "p_respond": 0.91,
+      "flex_assets": "EV + battery",
+      "total_shifted_kwh": 4.81,
+      "carbon_avoided_gCO2": 641.0,
+      "tokens_earned": 6.4
+    },
+    {
+      "id": "HH-025",
+      "peak_demand_kw": 2.14,
+      "max_shift_fraction": 0.24,
+      "max_shift_hours": 2.6,
+      "p_respond": 0.76,
+      "flex_assets": "Heat pump + laundry",
+      "total_shifted_kwh": 0.0,
+      "carbon_avoided_gCO2": 0.0,
+      "tokens_earned": 0.0
+    }
+  ],
+  "events": [
+    {
+      "from": "2026-01-31T14:30Z",
+      "to": "2026-01-31T15:00Z",
+      "intensity_actual": 153,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T15:00Z",
+      "to": "2026-01-31T15:30Z",
+      "intensity_actual": 160,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T15:30Z",
+      "to": "2026-01-31T16:00Z",
+      "intensity_actual": 160,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T16:00Z",
+      "to": "2026-01-31T16:30Z",
+      "intensity_actual": 164,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T16:30Z",
+      "to": "2026-01-31T17:00Z",
+      "intensity_actual": 170,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T17:00Z",
+      "to": "2026-01-31T17:30Z",
+      "intensity_actual": 172,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T17:30Z",
+      "to": "2026-01-31T18:00Z",
+      "intensity_actual": 175,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T18:00Z",
+      "to": "2026-01-31T18:30Z",
+      "intensity_actual": 175,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T18:30Z",
+      "to": "2026-01-31T19:00Z",
+      "intensity_actual": 171,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T19:00Z",
+      "to": "2026-01-31T19:30Z",
+      "intensity_actual": 168,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T19:30Z",
+      "to": "2026-01-31T20:00Z",
+      "intensity_actual": 161,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T20:00Z",
+      "to": "2026-01-31T20:30Z",
+      "intensity_actual": 148,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T20:30Z",
+      "to": "2026-01-31T21:00Z",
+      "intensity_actual": 143,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T21:00Z",
+      "to": "2026-01-31T21:30Z",
+      "intensity_actual": 135,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T21:30Z",
+      "to": "2026-01-31T22:00Z",
+      "intensity_actual": 130,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T22:00Z",
+      "to": "2026-01-31T22:30Z",
+      "intensity_actual": 123,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T22:30Z",
+      "to": "2026-01-31T23:00Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T23:00Z",
+      "to": "2026-01-31T23:30Z",
+      "intensity_actual": 111,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-01-31T23:30Z",
+      "to": "2026-02-01T00:00Z",
+      "intensity_actual": 113,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T00:00Z",
+      "to": "2026-02-01T00:30Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T00:30Z",
+      "to": "2026-02-01T01:00Z",
+      "intensity_actual": 118,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T01:00Z",
+      "to": "2026-02-01T01:30Z",
+      "intensity_actual": 116,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T01:30Z",
+      "to": "2026-02-01T02:00Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T02:00Z",
+      "to": "2026-02-01T02:30Z",
+      "intensity_actual": 113,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T02:30Z",
+      "to": "2026-02-01T03:00Z",
+      "intensity_actual": 107,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T03:00Z",
+      "to": "2026-02-01T03:30Z",
+      "intensity_actual": 101,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T03:30Z",
+      "to": "2026-02-01T04:00Z",
+      "intensity_actual": 93,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T04:00Z",
+      "to": "2026-02-01T04:30Z",
+      "intensity_actual": 92,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T04:30Z",
+      "to": "2026-02-01T05:00Z",
+      "intensity_actual": 89,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T05:00Z",
+      "to": "2026-02-01T05:30Z",
+      "intensity_actual": 85,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T05:30Z",
+      "to": "2026-02-01T06:00Z",
+      "intensity_actual": 89,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T06:00Z",
+      "to": "2026-02-01T06:30Z",
+      "intensity_actual": 98,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T06:30Z",
+      "to": "2026-02-01T07:00Z",
+      "intensity_actual": 113,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T07:00Z",
+      "to": "2026-02-01T07:30Z",
+      "intensity_actual": 119,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T07:30Z",
+      "to": "2026-02-01T08:00Z",
+      "intensity_actual": 128,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T08:00Z",
+      "to": "2026-02-01T08:30Z",
+      "intensity_actual": 145,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T08:30Z",
+      "to": "2026-02-01T09:00Z",
+      "intensity_actual": 156,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T09:00Z",
+      "to": "2026-02-01T09:30Z",
+      "intensity_actual": 164,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T09:30Z",
+      "to": "2026-02-01T10:00Z",
+      "intensity_actual": 167,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T10:00Z",
+      "to": "2026-02-01T10:30Z",
+      "intensity_actual": 170,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T10:30Z",
+      "to": "2026-02-01T11:00Z",
+      "intensity_actual": 173,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T11:00Z",
+      "to": "2026-02-01T11:30Z",
+      "intensity_actual": 179,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T11:30Z",
+      "to": "2026-02-01T12:00Z",
+      "intensity_actual": 182,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T12:00Z",
+      "to": "2026-02-01T12:30Z",
+      "intensity_actual": 184,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T12:30Z",
+      "to": "2026-02-01T13:00Z",
+      "intensity_actual": 190,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T13:00Z",
+      "to": "2026-02-01T13:30Z",
+      "intensity_actual": 193,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T13:30Z",
+      "to": "2026-02-01T14:00Z",
+      "intensity_actual": 197,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T14:00Z",
+      "to": "2026-02-01T14:30Z",
+      "intensity_actual": 202,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.64
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.415
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.558
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.702
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.588
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.688
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.564
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.58
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.637
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.648
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.487
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.612
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.53
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.694
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.452
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.498
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.509
+        }
+      ],
+      "aggregate_shifted_kw": 9.8
+    },
+    {
+      "from": "2026-02-01T14:30Z",
+      "to": "2026-02-01T15:00Z",
+      "intensity_actual": 202,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.648
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.479
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.502
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.709
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.604
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.619
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.555
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.554
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.622
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.631
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.504
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.61
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.522
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.651
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.407
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.539
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.517
+        }
+      ],
+      "aggregate_shifted_kw": 9.674
+    },
+    {
+      "from": "2026-02-01T15:00Z",
+      "to": "2026-02-01T15:30Z",
+      "intensity_actual": 203,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.744
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.468
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.56
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.711
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.641
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.676
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.589
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.616
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.696
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.625
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.486
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.62
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.54
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.704
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.417
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.523
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.496
+        }
+      ],
+      "aggregate_shifted_kw": 10.112
+    },
+    {
+      "from": "2026-02-01T15:30Z",
+      "to": "2026-02-01T16:00Z",
+      "intensity_actual": 210,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.644
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.432
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.512
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.651
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.621
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.683
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.536
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.544
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.605
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.593
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.52
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.648
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.508
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.738
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.454
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.497
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.446
+        }
+      ],
+      "aggregate_shifted_kw": 9.631
+    },
+    {
+      "from": "2026-02-01T16:00Z",
+      "to": "2026-02-01T16:30Z",
+      "intensity_actual": 214,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.21
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.124
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.167
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.218
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.17
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.203
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.154
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.172
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.208
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.191
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.149
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.204
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.165
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.219
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.128
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.15
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.139
+        }
+      ],
+      "aggregate_shifted_kw": 2.97
+    },
+    {
+      "from": "2026-02-01T16:30Z",
+      "to": "2026-02-01T17:00Z",
+      "intensity_actual": 216,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.234
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.139
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.185
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.244
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.229
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.239
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.21
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.217
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.238
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.252
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.173
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.244
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.207
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.28
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.143
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.187
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.201
+        }
+      ],
+      "aggregate_shifted_kw": 3.623
+    },
+    {
+      "from": "2026-02-01T17:00Z",
+      "to": "2026-02-01T17:30Z",
+      "intensity_actual": 216,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.301
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.187
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.22
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.308
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.247
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.285
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.248
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.252
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.281
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.265
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.215
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.281
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.23
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.341
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.188
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.207
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.203
+        }
+      ],
+      "aggregate_shifted_kw": 4.258
+    },
+    {
+      "from": "2026-02-01T17:30Z",
+      "to": "2026-02-01T18:00Z",
+      "intensity_actual": 214,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.338
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.248
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.256
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.343
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.321
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.333
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.283
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.308
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.333
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.309
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.249
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.329
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.263
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.371
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.206
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.248
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.264
+        }
+      ],
+      "aggregate_shifted_kw": 5.002
+    },
+    {
+      "from": "2026-02-01T18:00Z",
+      "to": "2026-02-01T18:30Z",
+      "intensity_actual": 211,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.371
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.255
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.33
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.361
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.357
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.382
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.318
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.346
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.379
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.408
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.292
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.35
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.306
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.432
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.256
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.285
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.266
+        }
+      ],
+      "aggregate_shifted_kw": 5.695
+    },
+    {
+      "from": "2026-02-01T18:30Z",
+      "to": "2026-02-01T19:00Z",
+      "intensity_actual": 212,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.369
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.24
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.293
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.377
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.34
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.387
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.303
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.352
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.349
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.358
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.281
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.354
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.266
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.414
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.228
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.254
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.273
+        }
+      ],
+      "aggregate_shifted_kw": 5.435
+    },
+    {
+      "from": "2026-02-01T19:00Z",
+      "to": "2026-02-01T19:30Z",
+      "intensity_actual": 215,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.353
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.249
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.268
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.385
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.333
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.391
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.316
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.345
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.372
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.371
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.278
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.353
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.3
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.427
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.244
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.271
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.28
+        }
+      ],
+      "aggregate_shifted_kw": 5.535
+    },
+    {
+      "from": "2026-02-01T19:30Z",
+      "to": "2026-02-01T20:00Z",
+      "intensity_actual": 213,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.368
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.221
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 0.287
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.385
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.323
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.36
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.299
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.347
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.356
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.372
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.272
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.321
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.334
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.424
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.249
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.266
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.257
+        }
+      ],
+      "aggregate_shifted_kw": 5.441
+    },
+    {
+      "from": "2026-02-01T20:00Z",
+      "to": "2026-02-01T20:30Z",
+      "intensity_actual": 209,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 1.388
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.933
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 1.061
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 1.462
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 1.331
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 1.41
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 1.155
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 1.295
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 1.311
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 1.468
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 1.048
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 1.296
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 1.133
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 1.605
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.864
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 1.12
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 1.142
+        }
+      ],
+      "aggregate_shifted_kw": 21.024
+    },
+    {
+      "from": "2026-02-01T20:30Z",
+      "to": "2026-02-01T21:00Z",
+      "intensity_actual": 204,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 1.316
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.939
+        },
+        {
+          "id": "HH-003",
+          "shifted_kw": 1.04
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 1.564
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 1.247
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 1.455
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 1.15
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 1.297
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 1.368
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 1.295
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 1.007
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 1.282
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 1.118
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 1.564
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.882
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.954
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 1.048
+        }
+      ],
+      "aggregate_shifted_kw": 20.524
+    },
+    {
+      "from": "2026-02-01T21:00Z",
+      "to": "2026-02-01T21:30Z",
+      "intensity_actual": 197,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T21:30Z",
+      "to": "2026-02-01T22:00Z",
+      "intensity_actual": 186,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T22:00Z",
+      "to": "2026-02-01T22:30Z",
+      "intensity_actual": 177,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T22:30Z",
+      "to": "2026-02-01T23:00Z",
+      "intensity_actual": 157,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T23:00Z",
+      "to": "2026-02-01T23:30Z",
+      "intensity_actual": 145,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-01T23:30Z",
+      "to": "2026-02-02T00:00Z",
+      "intensity_actual": 144,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T00:00Z",
+      "to": "2026-02-02T00:30Z",
+      "intensity_actual": 146,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T00:30Z",
+      "to": "2026-02-02T01:00Z",
+      "intensity_actual": 143,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T01:00Z",
+      "to": "2026-02-02T01:30Z",
+      "intensity_actual": 141,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T01:30Z",
+      "to": "2026-02-02T02:00Z",
+      "intensity_actual": 144,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T02:00Z",
+      "to": "2026-02-02T02:30Z",
+      "intensity_actual": 140,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T02:30Z",
+      "to": "2026-02-02T03:00Z",
+      "intensity_actual": 137,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T03:00Z",
+      "to": "2026-02-02T03:30Z",
+      "intensity_actual": 131,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T03:30Z",
+      "to": "2026-02-02T04:00Z",
+      "intensity_actual": 129,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T04:00Z",
+      "to": "2026-02-02T04:30Z",
+      "intensity_actual": 128,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T04:30Z",
+      "to": "2026-02-02T05:00Z",
+      "intensity_actual": 136,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T05:00Z",
+      "to": "2026-02-02T05:30Z",
+      "intensity_actual": 139,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T05:30Z",
+      "to": "2026-02-02T06:00Z",
+      "intensity_actual": 156,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T06:00Z",
+      "to": "2026-02-02T06:30Z",
+      "intensity_actual": 168,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T06:30Z",
+      "to": "2026-02-02T07:00Z",
+      "intensity_actual": 175,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T07:00Z",
+      "to": "2026-02-02T07:30Z",
+      "intensity_actual": 174,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T07:30Z",
+      "to": "2026-02-02T08:00Z",
+      "intensity_actual": 168,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T08:00Z",
+      "to": "2026-02-02T08:30Z",
+      "intensity_actual": 168,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T08:30Z",
+      "to": "2026-02-02T09:00Z",
+      "intensity_actual": 165,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T09:00Z",
+      "to": "2026-02-02T09:30Z",
+      "intensity_actual": 164,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T09:30Z",
+      "to": "2026-02-02T10:00Z",
+      "intensity_actual": 162,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T10:00Z",
+      "to": "2026-02-02T10:30Z",
+      "intensity_actual": 157,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T10:30Z",
+      "to": "2026-02-02T11:00Z",
+      "intensity_actual": 148,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T11:00Z",
+      "to": "2026-02-02T11:30Z",
+      "intensity_actual": 143,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T11:30Z",
+      "to": "2026-02-02T12:00Z",
+      "intensity_actual": 138,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T12:00Z",
+      "to": "2026-02-02T12:30Z",
+      "intensity_actual": 134,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T12:30Z",
+      "to": "2026-02-02T13:00Z",
+      "intensity_actual": 133,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T13:00Z",
+      "to": "2026-02-02T13:30Z",
+      "intensity_actual": 129,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T13:30Z",
+      "to": "2026-02-02T14:00Z",
+      "intensity_actual": 129,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T14:00Z",
+      "to": "2026-02-02T14:30Z",
+      "intensity_actual": 125,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T14:30Z",
+      "to": "2026-02-02T15:00Z",
+      "intensity_actual": 120,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T15:00Z",
+      "to": "2026-02-02T15:30Z",
+      "intensity_actual": 123,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T15:30Z",
+      "to": "2026-02-02T16:00Z",
+      "intensity_actual": 125,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T16:00Z",
+      "to": "2026-02-02T16:30Z",
+      "intensity_actual": 126,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T16:30Z",
+      "to": "2026-02-02T17:00Z",
+      "intensity_actual": 128,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T17:00Z",
+      "to": "2026-02-02T17:30Z",
+      "intensity_actual": 127,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T17:30Z",
+      "to": "2026-02-02T18:00Z",
+      "intensity_actual": 124,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T18:00Z",
+      "to": "2026-02-02T18:30Z",
+      "intensity_actual": 120,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T18:30Z",
+      "to": "2026-02-02T19:00Z",
+      "intensity_actual": 115,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T19:00Z",
+      "to": "2026-02-02T19:30Z",
+      "intensity_actual": 115,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T19:30Z",
+      "to": "2026-02-02T20:00Z",
+      "intensity_actual": 112,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T20:00Z",
+      "to": "2026-02-02T20:30Z",
+      "intensity_actual": 104,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T20:30Z",
+      "to": "2026-02-02T21:00Z",
+      "intensity_actual": 100,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T21:00Z",
+      "to": "2026-02-02T21:30Z",
+      "intensity_actual": 92,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T21:30Z",
+      "to": "2026-02-02T22:00Z",
+      "intensity_actual": 85,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T22:00Z",
+      "to": "2026-02-02T22:30Z",
+      "intensity_actual": 80,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T22:30Z",
+      "to": "2026-02-02T23:00Z",
+      "intensity_actual": 79,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T23:00Z",
+      "to": "2026-02-02T23:30Z",
+      "intensity_actual": 75,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-02T23:30Z",
+      "to": "2026-02-03T00:00Z",
+      "intensity_actual": 69,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T00:00Z",
+      "to": "2026-02-03T00:30Z",
+      "intensity_actual": 70,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T00:30Z",
+      "to": "2026-02-03T01:00Z",
+      "intensity_actual": 62,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T01:00Z",
+      "to": "2026-02-03T01:30Z",
+      "intensity_actual": 62,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T01:30Z",
+      "to": "2026-02-03T02:00Z",
+      "intensity_actual": 60,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T02:00Z",
+      "to": "2026-02-03T02:30Z",
+      "intensity_actual": 58,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T02:30Z",
+      "to": "2026-02-03T03:00Z",
+      "intensity_actual": 57,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T03:00Z",
+      "to": "2026-02-03T03:30Z",
+      "intensity_actual": 52,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T03:30Z",
+      "to": "2026-02-03T04:00Z",
+      "intensity_actual": 55,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T04:00Z",
+      "to": "2026-02-03T04:30Z",
+      "intensity_actual": 55,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T04:30Z",
+      "to": "2026-02-03T05:00Z",
+      "intensity_actual": 65,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T05:00Z",
+      "to": "2026-02-03T05:30Z",
+      "intensity_actual": 72,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T05:30Z",
+      "to": "2026-02-03T06:00Z",
+      "intensity_actual": 80,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T06:00Z",
+      "to": "2026-02-03T06:30Z",
+      "intensity_actual": 98,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T06:30Z",
+      "to": "2026-02-03T07:00Z",
+      "intensity_actual": 113,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T07:00Z",
+      "to": "2026-02-03T07:30Z",
+      "intensity_actual": 124,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T07:30Z",
+      "to": "2026-02-03T08:00Z",
+      "intensity_actual": 122,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T08:00Z",
+      "to": "2026-02-03T08:30Z",
+      "intensity_actual": 123,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T08:30Z",
+      "to": "2026-02-03T09:00Z",
+      "intensity_actual": 123,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T09:00Z",
+      "to": "2026-02-03T09:30Z",
+      "intensity_actual": 124,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T09:30Z",
+      "to": "2026-02-03T10:00Z",
+      "intensity_actual": 128,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T10:00Z",
+      "to": "2026-02-03T10:30Z",
+      "intensity_actual": 129,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T10:30Z",
+      "to": "2026-02-03T11:00Z",
+      "intensity_actual": 129,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T11:00Z",
+      "to": "2026-02-03T11:30Z",
+      "intensity_actual": 130,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T11:30Z",
+      "to": "2026-02-03T12:00Z",
+      "intensity_actual": 133,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T12:00Z",
+      "to": "2026-02-03T12:30Z",
+      "intensity_actual": 138,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T12:30Z",
+      "to": "2026-02-03T13:00Z",
+      "intensity_actual": 139,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T13:00Z",
+      "to": "2026-02-03T13:30Z",
+      "intensity_actual": 143,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T13:30Z",
+      "to": "2026-02-03T14:00Z",
+      "intensity_actual": 148,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T14:00Z",
+      "to": "2026-02-03T14:30Z",
+      "intensity_actual": 151,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T14:30Z",
+      "to": "2026-02-03T15:00Z",
+      "intensity_actual": 152,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T15:00Z",
+      "to": "2026-02-03T15:30Z",
+      "intensity_actual": 155,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T15:30Z",
+      "to": "2026-02-03T16:00Z",
+      "intensity_actual": 157,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T16:00Z",
+      "to": "2026-02-03T16:30Z",
+      "intensity_actual": 162,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T16:30Z",
+      "to": "2026-02-03T17:00Z",
+      "intensity_actual": 166,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T17:00Z",
+      "to": "2026-02-03T17:30Z",
+      "intensity_actual": 169,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T17:30Z",
+      "to": "2026-02-03T18:00Z",
+      "intensity_actual": 176,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T18:00Z",
+      "to": "2026-02-03T18:30Z",
+      "intensity_actual": 173,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T18:30Z",
+      "to": "2026-02-03T19:00Z",
+      "intensity_actual": 171,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T19:00Z",
+      "to": "2026-02-03T19:30Z",
+      "intensity_actual": 168,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T19:30Z",
+      "to": "2026-02-03T20:00Z",
+      "intensity_actual": 166,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T20:00Z",
+      "to": "2026-02-03T20:30Z",
+      "intensity_actual": 162,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T20:30Z",
+      "to": "2026-02-03T21:00Z",
+      "intensity_actual": 154,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T21:00Z",
+      "to": "2026-02-03T21:30Z",
+      "intensity_actual": 143,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T21:30Z",
+      "to": "2026-02-03T22:00Z",
+      "intensity_actual": 140,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T22:00Z",
+      "to": "2026-02-03T22:30Z",
+      "intensity_actual": 130,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T22:30Z",
+      "to": "2026-02-03T23:00Z",
+      "intensity_actual": 120,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T23:00Z",
+      "to": "2026-02-03T23:30Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-03T23:30Z",
+      "to": "2026-02-04T00:00Z",
+      "intensity_actual": 119,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T00:00Z",
+      "to": "2026-02-04T00:30Z",
+      "intensity_actual": 122,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T00:30Z",
+      "to": "2026-02-04T01:00Z",
+      "intensity_actual": 119,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T01:00Z",
+      "to": "2026-02-04T01:30Z",
+      "intensity_actual": 118,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T01:30Z",
+      "to": "2026-02-04T02:00Z",
+      "intensity_actual": 115,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T02:00Z",
+      "to": "2026-02-04T02:30Z",
+      "intensity_actual": 111,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T02:30Z",
+      "to": "2026-02-04T03:00Z",
+      "intensity_actual": 110,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T03:00Z",
+      "to": "2026-02-04T03:30Z",
+      "intensity_actual": 110,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T03:30Z",
+      "to": "2026-02-04T04:00Z",
+      "intensity_actual": 113,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T04:00Z",
+      "to": "2026-02-04T04:30Z",
+      "intensity_actual": 115,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T04:30Z",
+      "to": "2026-02-04T05:00Z",
+      "intensity_actual": 131,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T05:00Z",
+      "to": "2026-02-04T05:30Z",
+      "intensity_actual": 154,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T05:30Z",
+      "to": "2026-02-04T06:00Z",
+      "intensity_actual": 183,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T06:00Z",
+      "to": "2026-02-04T06:30Z",
+      "intensity_actual": 201,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.227
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.164
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.209
+        },
+        {
+          "id": "HH-005",
+          "shifted_kw": 0.239
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.206
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.247
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.185
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.223
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.219
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.242
+        },
+        {
+          "id": "HH-013",
+          "shifted_kw": 0.201
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.175
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.219
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.184
+        },
+        {
+          "id": "HH-020",
+          "shifted_kw": 0.177
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.247
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.142
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.18
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.171
+        }
+      ],
+      "aggregate_shifted_kw": 3.858
+    },
+    {
+      "from": "2026-02-04T06:30Z",
+      "to": "2026-02-04T07:00Z",
+      "intensity_actual": 206,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.363
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.231
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.359
+        },
+        {
+          "id": "HH-005",
+          "shifted_kw": 0.41
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.318
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.371
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.299
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.344
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.361
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.359
+        },
+        {
+          "id": "HH-013",
+          "shifted_kw": 0.3
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.307
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.332
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.272
+        },
+        {
+          "id": "HH-020",
+          "shifted_kw": 0.32
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.401
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.2
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.282
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.286
+        }
+      ],
+      "aggregate_shifted_kw": 6.113
+    },
+    {
+      "from": "2026-02-04T07:00Z",
+      "to": "2026-02-04T07:30Z",
+      "intensity_actual": 213,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.493
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.293
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.549
+        },
+        {
+          "id": "HH-005",
+          "shifted_kw": 0.556
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.446
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.447
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.386
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.5
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.476
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.499
+        },
+        {
+          "id": "HH-013",
+          "shifted_kw": 0.409
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.344
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.532
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.408
+        },
+        {
+          "id": "HH-020",
+          "shifted_kw": 0.416
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.544
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.321
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.35
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.383
+        }
+      ],
+      "aggregate_shifted_kw": 8.352
+    },
+    {
+      "from": "2026-02-04T07:30Z",
+      "to": "2026-02-04T08:00Z",
+      "intensity_actual": 205,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.638
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.456
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.565
+        },
+        {
+          "id": "HH-005",
+          "shifted_kw": 0.751
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.58
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.66
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.517
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.533
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.641
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.64
+        },
+        {
+          "id": "HH-013",
+          "shifted_kw": 0.583
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.466
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.611
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.508
+        },
+        {
+          "id": "HH-020",
+          "shifted_kw": 0.523
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.716
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.419
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.447
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.483
+        }
+      ],
+      "aggregate_shifted_kw": 10.738
+    },
+    {
+      "from": "2026-02-04T08:00Z",
+      "to": "2026-02-04T08:30Z",
+      "intensity_actual": 206,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.701
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.491
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.665
+        },
+        {
+          "id": "HH-005",
+          "shifted_kw": 0.724
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.569
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.589
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.547
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.587
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.647
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.665
+        },
+        {
+          "id": "HH-013",
+          "shifted_kw": 0.557
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.486
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.653
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.574
+        },
+        {
+          "id": "HH-020",
+          "shifted_kw": 0.51
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.691
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.396
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.473
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.476
+        }
+      ],
+      "aggregate_shifted_kw": 11.001
+    },
+    {
+      "from": "2026-02-04T08:30Z",
+      "to": "2026-02-04T09:00Z",
+      "intensity_actual": 206,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.556
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.417
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.623
+        },
+        {
+          "id": "HH-005",
+          "shifted_kw": 0.69
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.555
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.696
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.521
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.568
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.614
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.595
+        },
+        {
+          "id": "HH-013",
+          "shifted_kw": 0.544
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.464
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.602
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.506
+        },
+        {
+          "id": "HH-020",
+          "shifted_kw": 0.551
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.69
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.396
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.483
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.504
+        }
+      ],
+      "aggregate_shifted_kw": 10.578
+    },
+    {
+      "from": "2026-02-04T09:00Z",
+      "to": "2026-02-04T09:30Z",
+      "intensity_actual": 205,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.771
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.47
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.841
+        },
+        {
+          "id": "HH-005",
+          "shifted_kw": 0.851
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.659
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.799
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.641
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.641
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.727
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.72
+        },
+        {
+          "id": "HH-013",
+          "shifted_kw": 0.642
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.611
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.716
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.662
+        },
+        {
+          "id": "HH-020",
+          "shifted_kw": 0.676
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.891
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.519
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.526
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.698
+        }
+      ],
+      "aggregate_shifted_kw": 13.059
+    },
+    {
+      "from": "2026-02-04T09:30Z",
+      "to": "2026-02-04T10:00Z",
+      "intensity_actual": 201,
+      "flex_requested": true,
+      "participants": [
+        {
+          "id": "HH-001",
+          "shifted_kw": 0.769
+        },
+        {
+          "id": "HH-002",
+          "shifted_kw": 0.5
+        },
+        {
+          "id": "HH-004",
+          "shifted_kw": 0.763
+        },
+        {
+          "id": "HH-005",
+          "shifted_kw": 0.908
+        },
+        {
+          "id": "HH-006",
+          "shifted_kw": 0.704
+        },
+        {
+          "id": "HH-007",
+          "shifted_kw": 0.813
+        },
+        {
+          "id": "HH-008",
+          "shifted_kw": 0.634
+        },
+        {
+          "id": "HH-009",
+          "shifted_kw": 0.731
+        },
+        {
+          "id": "HH-011",
+          "shifted_kw": 0.76
+        },
+        {
+          "id": "HH-012",
+          "shifted_kw": 0.728
+        },
+        {
+          "id": "HH-013",
+          "shifted_kw": 0.62
+        },
+        {
+          "id": "HH-017",
+          "shifted_kw": 0.581
+        },
+        {
+          "id": "HH-018",
+          "shifted_kw": 0.73
+        },
+        {
+          "id": "HH-019",
+          "shifted_kw": 0.572
+        },
+        {
+          "id": "HH-020",
+          "shifted_kw": 0.696
+        },
+        {
+          "id": "HH-021",
+          "shifted_kw": 0.728
+        },
+        {
+          "id": "HH-022",
+          "shifted_kw": 0.442
+        },
+        {
+          "id": "HH-023",
+          "shifted_kw": 0.571
+        },
+        {
+          "id": "HH-024",
+          "shifted_kw": 0.587
+        }
+      ],
+      "aggregate_shifted_kw": 12.837
+    },
+    {
+      "from": "2026-02-04T10:00Z",
+      "to": "2026-02-04T10:30Z",
+      "intensity_actual": 197,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T10:30Z",
+      "to": "2026-02-04T11:00Z",
+      "intensity_actual": 194,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T11:00Z",
+      "to": "2026-02-04T11:30Z",
+      "intensity_actual": 190,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T11:30Z",
+      "to": "2026-02-04T12:00Z",
+      "intensity_actual": 186,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T12:00Z",
+      "to": "2026-02-04T12:30Z",
+      "intensity_actual": 182,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T12:30Z",
+      "to": "2026-02-04T13:00Z",
+      "intensity_actual": 176,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T13:00Z",
+      "to": "2026-02-04T13:30Z",
+      "intensity_actual": 176,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T13:30Z",
+      "to": "2026-02-04T14:00Z",
+      "intensity_actual": 172,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T14:00Z",
+      "to": "2026-02-04T14:30Z",
+      "intensity_actual": 169,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T14:30Z",
+      "to": "2026-02-04T15:00Z",
+      "intensity_actual": 175,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T15:00Z",
+      "to": "2026-02-04T15:30Z",
+      "intensity_actual": 174,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T15:30Z",
+      "to": "2026-02-04T16:00Z",
+      "intensity_actual": 175,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T16:00Z",
+      "to": "2026-02-04T16:30Z",
+      "intensity_actual": 176,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T16:30Z",
+      "to": "2026-02-04T17:00Z",
+      "intensity_actual": 172,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T17:00Z",
+      "to": "2026-02-04T17:30Z",
+      "intensity_actual": 167,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T17:30Z",
+      "to": "2026-02-04T18:00Z",
+      "intensity_actual": 166,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T18:00Z",
+      "to": "2026-02-04T18:30Z",
+      "intensity_actual": 161,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T18:30Z",
+      "to": "2026-02-04T19:00Z",
+      "intensity_actual": 158,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T19:00Z",
+      "to": "2026-02-04T19:30Z",
+      "intensity_actual": 148,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T19:30Z",
+      "to": "2026-02-04T20:00Z",
+      "intensity_actual": 130,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T20:00Z",
+      "to": "2026-02-04T20:30Z",
+      "intensity_actual": 114,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T20:30Z",
+      "to": "2026-02-04T21:00Z",
+      "intensity_actual": 101,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T21:00Z",
+      "to": "2026-02-04T21:30Z",
+      "intensity_actual": 83,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T21:30Z",
+      "to": "2026-02-04T22:00Z",
+      "intensity_actual": 73,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T22:00Z",
+      "to": "2026-02-04T22:30Z",
+      "intensity_actual": 62,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T22:30Z",
+      "to": "2026-02-04T23:00Z",
+      "intensity_actual": 58,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T23:00Z",
+      "to": "2026-02-04T23:30Z",
+      "intensity_actual": 55,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-04T23:30Z",
+      "to": "2026-02-05T00:00Z",
+      "intensity_actual": 64,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T00:00Z",
+      "to": "2026-02-05T00:30Z",
+      "intensity_actual": 64,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T00:30Z",
+      "to": "2026-02-05T01:00Z",
+      "intensity_actual": 59,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T01:00Z",
+      "to": "2026-02-05T01:30Z",
+      "intensity_actual": 56,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T01:30Z",
+      "to": "2026-02-05T02:00Z",
+      "intensity_actual": 55,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T02:00Z",
+      "to": "2026-02-05T02:30Z",
+      "intensity_actual": 53,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T02:30Z",
+      "to": "2026-02-05T03:00Z",
+      "intensity_actual": 48,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T03:00Z",
+      "to": "2026-02-05T03:30Z",
+      "intensity_actual": 45,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T03:30Z",
+      "to": "2026-02-05T04:00Z",
+      "intensity_actual": 48,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T04:00Z",
+      "to": "2026-02-05T04:30Z",
+      "intensity_actual": 49,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T04:30Z",
+      "to": "2026-02-05T05:00Z",
+      "intensity_actual": 57,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T05:00Z",
+      "to": "2026-02-05T05:30Z",
+      "intensity_actual": 68,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T05:30Z",
+      "to": "2026-02-05T06:00Z",
+      "intensity_actual": 82,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T06:00Z",
+      "to": "2026-02-05T06:30Z",
+      "intensity_actual": 94,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T06:30Z",
+      "to": "2026-02-05T07:00Z",
+      "intensity_actual": 105,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T07:00Z",
+      "to": "2026-02-05T07:30Z",
+      "intensity_actual": 112,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T07:30Z",
+      "to": "2026-02-05T08:00Z",
+      "intensity_actual": 112,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T08:00Z",
+      "to": "2026-02-05T08:30Z",
+      "intensity_actual": 113,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T08:30Z",
+      "to": "2026-02-05T09:00Z",
+      "intensity_actual": 109,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T09:00Z",
+      "to": "2026-02-05T09:30Z",
+      "intensity_actual": 110,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T09:30Z",
+      "to": "2026-02-05T10:00Z",
+      "intensity_actual": 114,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T10:00Z",
+      "to": "2026-02-05T10:30Z",
+      "intensity_actual": 114,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T10:30Z",
+      "to": "2026-02-05T11:00Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T11:00Z",
+      "to": "2026-02-05T11:30Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T11:30Z",
+      "to": "2026-02-05T12:00Z",
+      "intensity_actual": 118,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T12:00Z",
+      "to": "2026-02-05T12:30Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T12:30Z",
+      "to": "2026-02-05T13:00Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T13:00Z",
+      "to": "2026-02-05T13:30Z",
+      "intensity_actual": 121,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T13:30Z",
+      "to": "2026-02-05T14:00Z",
+      "intensity_actual": 128,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T14:00Z",
+      "to": "2026-02-05T14:30Z",
+      "intensity_actual": 133,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T14:30Z",
+      "to": "2026-02-05T15:00Z",
+      "intensity_actual": 135,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T15:00Z",
+      "to": "2026-02-05T15:30Z",
+      "intensity_actual": 140,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T15:30Z",
+      "to": "2026-02-05T16:00Z",
+      "intensity_actual": 144,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T16:00Z",
+      "to": "2026-02-05T16:30Z",
+      "intensity_actual": 148,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T16:30Z",
+      "to": "2026-02-05T17:00Z",
+      "intensity_actual": 150,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T17:00Z",
+      "to": "2026-02-05T17:30Z",
+      "intensity_actual": 150,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T17:30Z",
+      "to": "2026-02-05T18:00Z",
+      "intensity_actual": 149,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T18:00Z",
+      "to": "2026-02-05T18:30Z",
+      "intensity_actual": 149,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T18:30Z",
+      "to": "2026-02-05T19:00Z",
+      "intensity_actual": 147,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T19:00Z",
+      "to": "2026-02-05T19:30Z",
+      "intensity_actual": 144,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T19:30Z",
+      "to": "2026-02-05T20:00Z",
+      "intensity_actual": 138,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T20:00Z",
+      "to": "2026-02-05T20:30Z",
+      "intensity_actual": 134,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T20:30Z",
+      "to": "2026-02-05T21:00Z",
+      "intensity_actual": 125,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T21:00Z",
+      "to": "2026-02-05T21:30Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T21:30Z",
+      "to": "2026-02-05T22:00Z",
+      "intensity_actual": 112,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T22:00Z",
+      "to": "2026-02-05T22:30Z",
+      "intensity_actual": 106,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T22:30Z",
+      "to": "2026-02-05T23:00Z",
+      "intensity_actual": 92,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T23:00Z",
+      "to": "2026-02-05T23:30Z",
+      "intensity_actual": 89,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-05T23:30Z",
+      "to": "2026-02-06T00:00Z",
+      "intensity_actual": 92,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T00:00Z",
+      "to": "2026-02-06T00:30Z",
+      "intensity_actual": 97,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T00:30Z",
+      "to": "2026-02-06T01:00Z",
+      "intensity_actual": 96,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T01:00Z",
+      "to": "2026-02-06T01:30Z",
+      "intensity_actual": 91,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T01:30Z",
+      "to": "2026-02-06T02:00Z",
+      "intensity_actual": 91,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T02:00Z",
+      "to": "2026-02-06T02:30Z",
+      "intensity_actual": 88,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T02:30Z",
+      "to": "2026-02-06T03:00Z",
+      "intensity_actual": 85,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T03:00Z",
+      "to": "2026-02-06T03:30Z",
+      "intensity_actual": 85,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T03:30Z",
+      "to": "2026-02-06T04:00Z",
+      "intensity_actual": 87,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T04:00Z",
+      "to": "2026-02-06T04:30Z",
+      "intensity_actual": 88,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T04:30Z",
+      "to": "2026-02-06T05:00Z",
+      "intensity_actual": 94,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T05:00Z",
+      "to": "2026-02-06T05:30Z",
+      "intensity_actual": 100,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T05:30Z",
+      "to": "2026-02-06T06:00Z",
+      "intensity_actual": 111,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T06:00Z",
+      "to": "2026-02-06T06:30Z",
+      "intensity_actual": 126,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T06:30Z",
+      "to": "2026-02-06T07:00Z",
+      "intensity_actual": 142,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T07:00Z",
+      "to": "2026-02-06T07:30Z",
+      "intensity_actual": 148,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T07:30Z",
+      "to": "2026-02-06T08:00Z",
+      "intensity_actual": 153,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T08:00Z",
+      "to": "2026-02-06T08:30Z",
+      "intensity_actual": 155,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T08:30Z",
+      "to": "2026-02-06T09:00Z",
+      "intensity_actual": 156,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T09:00Z",
+      "to": "2026-02-06T09:30Z",
+      "intensity_actual": 156,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T09:30Z",
+      "to": "2026-02-06T10:00Z",
+      "intensity_actual": 155,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T10:00Z",
+      "to": "2026-02-06T10:30Z",
+      "intensity_actual": 156,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T10:30Z",
+      "to": "2026-02-06T11:00Z",
+      "intensity_actual": 156,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T11:00Z",
+      "to": "2026-02-06T11:30Z",
+      "intensity_actual": 155,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T11:30Z",
+      "to": "2026-02-06T12:00Z",
+      "intensity_actual": 158,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T12:00Z",
+      "to": "2026-02-06T12:30Z",
+      "intensity_actual": 159,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T12:30Z",
+      "to": "2026-02-06T13:00Z",
+      "intensity_actual": 159,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T13:00Z",
+      "to": "2026-02-06T13:30Z",
+      "intensity_actual": 160,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T13:30Z",
+      "to": "2026-02-06T14:00Z",
+      "intensity_actual": 161,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T14:00Z",
+      "to": "2026-02-06T14:30Z",
+      "intensity_actual": 162,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T14:30Z",
+      "to": "2026-02-06T15:00Z",
+      "intensity_actual": 160,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T15:00Z",
+      "to": "2026-02-06T15:30Z",
+      "intensity_actual": 162,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T15:30Z",
+      "to": "2026-02-06T16:00Z",
+      "intensity_actual": 163,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T16:00Z",
+      "to": "2026-02-06T16:30Z",
+      "intensity_actual": 162,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T16:30Z",
+      "to": "2026-02-06T17:00Z",
+      "intensity_actual": 162,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T17:00Z",
+      "to": "2026-02-06T17:30Z",
+      "intensity_actual": 160,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T17:30Z",
+      "to": "2026-02-06T18:00Z",
+      "intensity_actual": 158,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T18:00Z",
+      "to": "2026-02-06T18:30Z",
+      "intensity_actual": 157,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T18:30Z",
+      "to": "2026-02-06T19:00Z",
+      "intensity_actual": 155,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T19:00Z",
+      "to": "2026-02-06T19:30Z",
+      "intensity_actual": 147,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T19:30Z",
+      "to": "2026-02-06T20:00Z",
+      "intensity_actual": 146,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T20:00Z",
+      "to": "2026-02-06T20:30Z",
+      "intensity_actual": 143,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T20:30Z",
+      "to": "2026-02-06T21:00Z",
+      "intensity_actual": 140,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T21:00Z",
+      "to": "2026-02-06T21:30Z",
+      "intensity_actual": 138,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T21:30Z",
+      "to": "2026-02-06T22:00Z",
+      "intensity_actual": 133,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T22:00Z",
+      "to": "2026-02-06T22:30Z",
+      "intensity_actual": 129,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T22:30Z",
+      "to": "2026-02-06T23:00Z",
+      "intensity_actual": 120,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T23:00Z",
+      "to": "2026-02-06T23:30Z",
+      "intensity_actual": 119,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-06T23:30Z",
+      "to": "2026-02-07T00:00Z",
+      "intensity_actual": 119,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T00:00Z",
+      "to": "2026-02-07T00:30Z",
+      "intensity_actual": 121,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T00:30Z",
+      "to": "2026-02-07T01:00Z",
+      "intensity_actual": 121,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T01:00Z",
+      "to": "2026-02-07T01:30Z",
+      "intensity_actual": 120,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T01:30Z",
+      "to": "2026-02-07T02:00Z",
+      "intensity_actual": 117,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T02:00Z",
+      "to": "2026-02-07T02:30Z",
+      "intensity_actual": 118,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T02:30Z",
+      "to": "2026-02-07T03:00Z",
+      "intensity_actual": 113,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T03:00Z",
+      "to": "2026-02-07T03:30Z",
+      "intensity_actual": 110,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T03:30Z",
+      "to": "2026-02-07T04:00Z",
+      "intensity_actual": 105,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T04:00Z",
+      "to": "2026-02-07T04:30Z",
+      "intensity_actual": 106,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T04:30Z",
+      "to": "2026-02-07T05:00Z",
+      "intensity_actual": 110,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T05:00Z",
+      "to": "2026-02-07T05:30Z",
+      "intensity_actual": 116,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T05:30Z",
+      "to": "2026-02-07T06:00Z",
+      "intensity_actual": 124,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T06:00Z",
+      "to": "2026-02-07T06:30Z",
+      "intensity_actual": 135,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T06:30Z",
+      "to": "2026-02-07T07:00Z",
+      "intensity_actual": 146,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T07:00Z",
+      "to": "2026-02-07T07:30Z",
+      "intensity_actual": 150,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T07:30Z",
+      "to": "2026-02-07T08:00Z",
+      "intensity_actual": 154,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T08:00Z",
+      "to": "2026-02-07T08:30Z",
+      "intensity_actual": 159,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T08:30Z",
+      "to": "2026-02-07T09:00Z",
+      "intensity_actual": 160,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T09:00Z",
+      "to": "2026-02-07T09:30Z",
+      "intensity_actual": 158,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T09:30Z",
+      "to": "2026-02-07T10:00Z",
+      "intensity_actual": 159,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T10:00Z",
+      "to": "2026-02-07T10:30Z",
+      "intensity_actual": 155,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T10:30Z",
+      "to": "2026-02-07T11:00Z",
+      "intensity_actual": 155,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T11:00Z",
+      "to": "2026-02-07T11:30Z",
+      "intensity_actual": 152,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T11:30Z",
+      "to": "2026-02-07T12:00Z",
+      "intensity_actual": 151,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T12:00Z",
+      "to": "2026-02-07T12:30Z",
+      "intensity_actual": 150,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T12:30Z",
+      "to": "2026-02-07T13:00Z",
+      "intensity_actual": 153,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T13:00Z",
+      "to": "2026-02-07T13:30Z",
+      "intensity_actual": 150,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T13:30Z",
+      "to": "2026-02-07T14:00Z",
+      "intensity_actual": 145,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T14:00Z",
+      "to": "2026-02-07T14:30Z",
+      "intensity_actual": 147,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    },
+    {
+      "from": "2026-02-07T14:30Z",
+      "to": "2026-02-07T15:00Z",
+      "intensity_actual": 149,
+      "flex_requested": false,
+      "participants": [],
+      "aggregate_shifted_kw": 0.0
+    }
+  ]
+}
