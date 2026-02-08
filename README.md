@@ -407,7 +407,7 @@ Flare's FDC is a powerful primitive. The core idea — decentralised attestation
 
 ## Team
 
-Built at ETH Oxford 2026.
+Built by Zara Pashov and Oliver Pugh at ETH Oxford 2026.
 
 ## License
 
