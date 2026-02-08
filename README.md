@@ -1,8 +1,8 @@
 # FlexDAO
 
-**Demand-flexibility verification and carbon-aware incentives, powered by Flare's Data Connector (FDC).**
+**Electricity Demand-flexibility verification and carbon-aware incentives, powered by Flare's Data Connector (FDC).**
 
-Built at ETH Oxford 2026 - Attempting the BONUS TRACK: "Show innovation by utilizing real world data in an on chain application"
+Built at ETH Oxford 2026 - Attempting Flare's BONUS TRACK: "Show innovation by utilizing real world data in an on chain application"
 
 ---
 
