@@ -1,8 +1,69 @@
 # FlexDAO
 
-**Decentralised demand-flexibility verification using real UK energy data and the Flare Data Connector.**
+**Demand-flexibility verification and carbon-aware incentives, powered by Flare's Data Connector (FDC).**
 
 Built at ETH Oxford 2026.
+
+---
+
+## Use of Flare's Enshrined Data Protocols
+
+**FlexDAO uses Flare's [Data Connector (FDC)](https://docs.flare.network/tech/fdc/) — specifically the `Web2Json` attestation type — as its trust anchor.** No reward can be issued without a verified FDC attestation. This is not a mock or stub: we have a live attestation and reward execution on Coston2.
+
+### How it works
+
+1. **Fetch** — Pulls 7 days of half-hourly carbon intensity from the UK National Grid API (real Web2 data)
+2. **Attest** — Submits a `Web2Json` attestation request to the FDC Hub on Coston2, paying the request fee. The Flare validator set attests the API response and produces a Merkle proof via the Data Availability layer.
+3. **Verify** — Calls `IFdcVerification.verifyWeb2Json()` on-chain to confirm the Merkle proof is valid. Also validates: 12+ block confirmations, payload hash (SHA-256 MIC), and timestamp range.
+4. **Reward** — Only after verification passes, `RewardExecutor.executeReward()` records the reward on-chain with replay protection (one execution per attestation tx hash).
+
+### Live on-chain evidence (Coston2, Chain ID 114)
+
+| Step | Transaction | Block |
+|------|-------------|-------|
+| FDC attestation request | [`0x345fdb...2fcf`](https://coston2-explorer.flare.network/tx/0x345fdb1257ea41d1746af39dadfa9201c4902658450fe3e8d9b6bfd5384f2fcf) | 26,998,119 |
+| Reward execution | [`0x3f1d17...af7f`](https://coston2-explorer.flare.network/tx/0x3f1d172f9b4cdf1c436f223dc8af7ebc0b6a4552d4295ccd5c0480d939fcaf7f) | 27,000,149 |
+| RewardExecutor deploy | [`0xf7c243...b215`](https://coston2-explorer.flare.network/tx/0xf7c2434bd63d2764af45cc97f1162b0f6125934711fcde6c93ced9cdb381b215) | — |
+
+**Contracts:**
+- FDC Hub: [`0x48aC463d7975828989331F4De43341627b9c5f1D`](https://coston2-explorer.flare.network/address/0x48aC463d7975828989331F4De43341627b9c5f1D)
+- FDC Verification: [`0x906507E0B64bcD494Db73bd0459d1C667e14B933`](https://coston2-explorer.flare.network/address/0x906507E0B64bcD494Db73bd0459d1C667e14B933)
+- RewardExecutor: [`0x4a24DE38a2958f895e62c2E9b8D87054220101e0`](https://coston2-explorer.flare.network/address/0x4a24DE38a2958f895e62c2E9b8D87054220101e0)
+
+### FDC pipeline detail
+
+```
+UK National Grid API (Web2)
+        │
+        │  GET /intensity/2026-01-31T00:00Z/2026-02-07T00:00Z
+        ▼
+┌─────────────────────────────────────────┐
+│  1. REQUEST ATTESTATION                 │
+│  FdcHub.requestAttestation() on Coston2 │
+│  Type: Web2Json  │  Source: PublicWeb2  │
+│  JQ: .data | tostring                  │
+└──────────────────┬──────────────────────┘
+                   ▼
+┌─────────────────────────────────────────┐
+│  2. FETCH MERKLE PROOF                  │
+│  Poll DA layer for voting round proof   │
+│  (ctn2-data-availability.flare.network) │
+└──────────────────┬──────────────────────┘
+                   ▼
+┌─────────────────────────────────────────┐
+│  3. ON-CHAIN VERIFICATION               │
+│  IFdcVerification.verifyWeb2Json()      │
+│  Returns: true (Merkle proof valid)     │
+│  + 12 confirmations + MIC + timestamp   │
+└──────────────────┬──────────────────────┘
+                   ▼
+┌─────────────────────────────────────────┐
+│  4. REWARD EXECUTION                    │
+│  RewardExecutor.executeReward()         │
+│  Emits RewardExecuted event on-chain    │
+│  Replay protection per attestation      │
+└─────────────────────────────────────────┘
+```
 
 ---
 
@@ -10,11 +71,10 @@ Built at ETH Oxford 2026.
 
 FlexDAO brings real-world energy data on-chain to verify and reward household demand-flexibility:
 
-1. **Fetch** — Pulls 7 days of half-hourly carbon intensity from the UK National Grid API (real Web2 data)
-2. **Simulate** — Models 25 households with comfort-constrained flexibility (EV, heat pump, battery, appliances)
-3. **Attest** — A Flare FDC stub converts each data point into a `keccak256(timestamp) → intensity` attestation
-4. **Relay** — Attestations are submitted to an on-chain `FDCShim` contract (simulates FDC's Merkle-proof verification)
-5. **Verify & Reward** — `FlexDAO.sol` reads the oracle, confirms the slot was high-carbon (>= 200 gCO2/kWh), and issues FLEX tokens proportional to (energy shifted) x (carbon intensity delta)
+- **Real carbon data** from the UK National Grid API is attested via Flare FDC — no party can fabricate or alter it after attestation.
+- **25 households** are modelled with comfort-constrained flexibility (EV, heat pump, battery, appliances).
+- **Carbon-proportional rewards**: FLEX tokens scale with actual carbon impact — `reward = (kWh shifted) × (intensity delta) / 1000`. Shifting during higher-intensity windows earns more.
+- **On-chain audit trail**: every reward is recorded with replay protection, linking attestation tx, payload hash, participant, and shifted load.
 
 ## Why comfort constraints matter
 
@@ -43,26 +103,29 @@ The simulation generates realistic UK "duck curve" demand profiles and splits ea
 | Component | Status |
 |---|---|
 | UK carbon intensity data | **Real** — live API call to carbonintensity.org.uk |
-| keccak256 oracle keys | **Real** — same derivation as production |
-| Solidity contract logic | **Real** — compiles and runs on EVM (Hardhat) |
+| FDC attestation | **Real** — `Web2Json` attestation on Coston2, verified via `verifyWeb2Json()` |
+| Merkle proof verification | **Real** — on-chain `IFdcVerification` call, not mocked |
+| Reward execution | **Real** — `RewardExecutor.executeReward()` on Coston2, replay-protected |
+| Solidity contract logic | **Real** — compiled and deployed on Coston2 |
 | Demand profiles | **Realistic** — UK duck curve with per-household variation |
 | Comfort constraints | **Realistic** — based on published DSR literature |
-| FDC attestation consensus | **Simulated** — single-provider stub, no Merkle tree |
 | Household metering | **Simulated** — numpy model, not real smart meters |
-| FLEX token | **Simulated** — uint mapping, not ERC-20 |
+| FLEX token | **Simulated** — uint mapping, not ERC-20 (production would be ERC-20) |
+
+> The project includes a local simulation mode (gated behind `ATTESTATION_MODE=simulation`) for rapid iteration, but the production path — check_attestation, run_reward_flow — uses only real FDC verification. No simulation code runs in the production execution path.
 
 ## Architecture
 
 ```
-UK Grid API (Web2)         Flare FDC (simulated)        FlexDAO (Solidity)
+UK Grid API (Web2)         Flare FDC (Coston2)          On-chain contracts
 ┌─────────────────┐       ┌───────────────────┐       ┌──────────────────┐
-│ Carbon Intensity │──────>│ Attestation Stub  │──────>│ FDCShim (on-chain│
-│ /intensity/{t}   │ fetch │ keccak256(ts)→val │ relay │ key→intensity)   │
+│ Carbon Intensity │──────>│ Web2Json attesta- │──────>│ verifyWeb2Json() │
+│ /intensity/{t}   │ fetch │ tion via FDC Hub  │ proof │ on-chain verify  │
 └─────────────────┘       └───────────────────┘       └────────┬─────────┘
-                                                               │ reads
+                                                               │ verified
 ┌─────────────────┐       ┌───────────────────┐       ┌───────v──────────┐
-│ 25 Households   │──────>│ Flex Responses    │──────>│ FlexDAO.sol      │
-│ comfort-limited  │ numpy │ who shifted what  │submit │ verify + reward  │
+│ 25 Households   │──────>│ Flex Responses    │──────>│ executeReward()  │
+│ comfort-limited  │ numpy │ who shifted what  │  call │ on-chain record  │
 └─────────────────┘       └───────────────────┘       └──────────────────┘
 ```
 
@@ -125,16 +188,16 @@ cd frontend && npm start
 Use this flow to verify an existing real Flare FDC attestation on-chain and only run rewards after confirmation.
 
 ```bash
-# 1) Real-mode + Flare network config
+# 1) Real-mode + Flare network config (Coston2)
 export ATTESTATION_MODE="real"
-export FLARE_RPC_URL="<flare-rpc-url>"
-export FLARE_CHAIN_ID="<flare-chain-id>"
-export FDC_ATTESTATION_CONTRACT="<fdc-hub-or-attestation-contract>"
+export FLARE_RPC_URL="https://coston2-api.flare.network/ext/C/rpc"
+export FLARE_CHAIN_ID="114"
+export FDC_ATTESTATION_CONTRACT="0x48aC463d7975828989331F4De43341627b9c5f1D"
 export FDC_VERIFICATION_CONTRACT="0x906507E0B64bcD494Db73bd0459d1C667e14B933"
 export CONFIRMATIONS="12"
 
 # 2) Existing attestation + proof artifacts
-export ATTESTATION_TX_HASH="<attestation-tx-hash>"
+export ATTESTATION_TX_HASH="0x345fdb1257ea41d1746af39dadfa9201c4902658450fe3e8d9b6bfd5384f2fcf"
 export REQUEST_SUBMISSION_PATH="fdc-carbon/out/request_submission.json"
 export DA_PROOF_PATH="fdc-carbon/out/da_proof.json"
 export API_RESPONSE_PATH="fdc-carbon/api_response.json"
@@ -234,47 +297,98 @@ node backend/fdc_to_contract_stub.js     # "337 attestations relayed on-chain"
 npx hardhat run scripts/demoFlow.js --network localhost
 ```
 
+Then show the real FDC attestation verification (separate terminal, ~5s):
+
+```bash
+# Verify real attestation on Coston2
+node scripts/check_attestation.js --id 0x345fdb1257ea41d1746af39dadfa9201c4902658450fe3e8d9b6bfd5384f2fcf
+# → "Confirmed: true  |  Verification passed: true  |  verifyWeb2Json"
+```
+
 **Key talking points:**
 - "The carbon data is REAL — fetched live from the UK National Grid API"
+- "We attested this data on Flare Coston2 via FDC — here's the on-chain proof"
 - "Each household has real constraints — you can't turn off the lights. Only EVs, heat pumps, and batteries shift."
 - "Shifted energy is conserved — it moves to low-carbon windows, not deleted"
-- "FlexDAO.sol verifies each event against on-chain FDC data before issuing rewards"
-- "Rewards scale with carbon benefit: shifting at 220 gCO2 earns more than at 201 gCO2"
-- "Production: swap FDCShim for Flare mainnet, add real smart meter data via n3rgy/Hildebrand"
+- "Rewards only execute after `verifyWeb2Json()` returns true — no mock, no override"
+- "Rewards scale with carbon benefit: shifting at 220 gCO2 earns more than at 151 gCO2"
 
 ## File structure
 
 ```
-backend/
-  fetch_carbon.py          — Fetches UK carbon intensity (Web2 data source)
-  simulate.py              — Comfort-constrained household flexibility simulation
-  fdc_stub.js              — Flare FDC attestation simulation
-  fdc_to_contract_stub.js  — Relays attestations to on-chain FDCShim
-  data/
-    carbon_week.json       — Raw carbon intensity data
-    flex_responses.json    — Per-slot flex events (backward-compatible)
-    households.json        — Per-household time series (baseline + shifted)
-    aggregates.csv         — Community-level half-hourly totals
 contracts/
-  IFDCOracle.sol           — Oracle interface
-  FDCShim.sol              — Simulated FDC on-chain store
-  FlexDAO.sol              — Verification and reward contract
+  RewardExecutor.sol         — On-chain reward recorder (deployed on Coston2)
+  FlexDAO.sol                — Verification and reward contract (local demo)
+  FDCShim.sol                — Simulated FDC oracle (local demo only, gated)
+
 scripts/
-  deploy.js                — Hardhat deploy script
-  demoFlow.js              — End-to-end demo script
+  check_attestation.js       — Verify FDC attestation: verifyWeb2Json(), confirmations
+  run_reward_flow.js         — Verify then execute reward (--dry-run or --execute)
+  inspect_attestation_tx.js  — Decode and inspect attestation tx
+  inspect_reward_tx.js       — Decode RewardExecuted events
+  attestation_mode.js        — Mode gate: simulation vs real
+
+fdc-carbon/
+  request_jsonapi_attestation.js  — Submit Web2Json request to FDC Hub
+  fetch_da_proof.js               — Poll DA layer for Merkle proof
+  verify_with_fdc_verification.js — Call verifyWeb2Json() on-chain
+
+backend/
+  fetch_carbon.py            — Fetches UK carbon intensity (Web2 data source)
+  simulate.py                — Comfort-constrained household flexibility model
+  fdc_stub.js                — FDC attestation simulation (local demo, gated)
+  fdc_to_contract_stub.js    — Relays to FDCShim (local demo, gated)
+
 frontend/
-  src/App.jsx              — React dashboard with 6 visualisation panels
-  public/data/             — Simulation data served to frontend
+  src/App.jsx                — React dashboard with on-chain verification display
+  public/data/onchain.json   — Real attestation + reward tx data from Coston2
 ```
 
 ## Production roadmap
 
-1. **Replace FDCShim** with Flare mainnet FDC verification contract
-2. **Real metering** — integrate with smart meter APIs (n3rgy, Hildebrand, DCC)
-3. **ERC-20 FLEX token** — replace uint mapping with transferable token
-4. **Multi-period staking** — commit to flexibility over longer windows for bonus rewards
-5. **DAO governance** — token holders vote on threshold parameters and reward curves
-6. **Grid operator integration** — National Grid ESO flexibility market participation
+1. ~~**Replace FDCShim** with Flare FDC verification contract~~ **Done** — production path uses real `verifyWeb2Json()` on Coston2
+2. **Flare mainnet deployment** — move from Coston2 testnet to Flare mainnet
+3. **Real metering** — integrate with smart meter APIs (n3rgy, Hildebrand, DCC)
+4. **ERC-20 FLEX token** — replace uint mapping with transferable token
+5. **Multi-period staking** — commit to flexibility over longer windows for bonus rewards
+6. **DAO governance** — token holders vote on threshold parameters and reward curves
+7. **Grid operator integration** — National Grid ESO flexibility market participation
+
+---
+
+## Developer Feedback: Building on Flare
+
+### What worked well
+
+- **The FDC concept is exactly right for this use case.** Bringing Web2 API data on-chain with cryptographic guarantees is precisely what demand-response verification needs. The `Web2Json` attestation type let us attest an entire week of carbon intensity data in a single transaction — no custom oracle infrastructure required.
+
+- **Coston2 was stable and responsive.** RPC endpoints, the DA layer, and the verification contracts all worked reliably throughout the hackathon. Block times were fast enough for rapid iteration.
+
+- **The verifier API (prepareRequest + MIC) is well-designed.** The two-step flow — prepare the encoded request, then confirm the Message Integrity Code — gave us confidence that what we submitted matched what the verifier would attest.
+
+- **On-chain verification is elegant once you have the proof.** Calling `verifyWeb2Json()` with the Merkle proof is a single `view` call — no gas cost for verification, which is ideal for a dApp that needs to check attestations frequently.
+
+### What was challenging
+
+- **Discovering the correct verification contract and ABI was the hardest part.** The `IFdcVerification` interface wasn't immediately obvious from the documentation. We wrote a registry-check script to query the Flare contract registry and tried multiple contract addresses and function signatures (`verifyJsonApi` vs `verifyWeb2Json`) before finding the working combination. Clearer documentation on which verification contract to use on each network, with a canonical ABI, would save builders significant time.
+
+- **The MIC (Message Integrity Code) had two different values.** Our locally computed SHA-256 of the API response (`computedMic`) differed from the verifier's `messageIntegrityCode`. Both are valid in different contexts, but the relationship between them isn't well-documented. We had to test both to understand which one the on-chain verification expects.
+
+- **DA proof polling requires patience and guesswork.** After submitting an attestation request, we polled the DA layer across multiple voting rounds (trying `latestRound - 2` through `latestRound + 1`) because there's no notification when the proof is ready. The ~10 minute wait with 15-second polling intervals is fine for production, but during a hackathon it meant a lot of staring at "proof not ready yet" messages. A webhook or WebSocket subscription for proof readiness would be a meaningful DX improvement.
+
+- **The `postProcessJq` and `abiSignature` interaction needs more examples.** We used `.data | tostring` with `abiSignature: "string"`, which works, but it took trial and error to understand what JQ expressions the verifier supports and how the output maps to ABI-encoded response data. More worked examples in the docs — especially for JSON APIs that return nested objects — would help.
+
+### Suggestions for Flare
+
+1. **Publish a "first attestation" tutorial** with a complete working example: API URL, JQ transform, expected MIC, verification contract address, and ABI — all for Coston2. One copy-paste-and-run script would save every new builder 2-3 hours.
+2. **Add verification contract addresses to the docs network tables** alongside the FDC Hub address, so builders don't need to query the registry.
+3. **Consider a proof-ready notification** (WebSocket or event) from the DA layer, as an alternative to polling.
+
+### Overall
+
+Flare's FDC is a powerful primitive. The core idea — decentralised attestation of Web2 data with Merkle proof verification — is sound and production-ready. The main friction is in developer discovery: finding the right contracts, ABIs, and parameter formats. Once we had those, the integration was straightforward and the on-chain verification worked exactly as expected.
+
+---
 
 ## Team
 
